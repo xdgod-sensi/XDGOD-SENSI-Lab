@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>XDGOD SENSI 👾 | Free Fire Sensitivity Generator</title>
+<meta name="description" content="XDGOD SENSI — free Free Fire sensitivity generator. Pick your phone, RAM and style to get General, Red Dot, 2X, 4X, Sniper and Free Look settings in seconds.">
+<meta name="theme-color" content="#050508">
+<meta property="og:title" content="XDGOD SENSI 👾 | Free Fire Sensitivity Generator">
+<meta property="og:description" content="Smart Sensitivity. Better Control. Better Gameplay.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050508'/%3E%3Crect x='2.5' y='2.5' width='59' height='59' rx='12' fill='none' stroke='%23a855f7' stroke-width='3'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23c084fc' font-family='serif' font-weight='bold'%3EX%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Ambient background (pure CSS, no artwork) -->
+<div class="bg-fx" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="grid"></span>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand" aria-label="XDGOD SENSI — home">
+      <span class="brand-logo">
+        <!-- Transparent XcussedGod logo: assets/logo.png (replace the file to change it). Gothic text is the fallback. -->
+        <img class="logo-img" src="assets/logo.png" alt="XcussedGod" onload="this.parentElement.classList.add('has-img')" onerror="this.remove()">
+        <span class="logo-text">XcussedGod</span>
+      </span>
+      <span class="brand-tag">SENSI <span aria-hidden="true">👾</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#generator" class="btn btn-primary btn-sm">Generate</a>
+    </nav>
+
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="pill reveal"><i class="dot"></i> FREE FIRE SENSITIVITY GENERATOR</span>
+      <h1 class="reveal" style="--d:.08s">FIND YOUR <span class="grad">PERFECT SENSITIVITY</span></h1>
+      <p class="sub reveal" style="--d:.16s">Smart Sensitivity. Better Control. Better Gameplay.</p>
+      <div class="hero-cta reveal" style="--d:.24s">
+        <a href="#generator" class="btn btn-primary btn-lg">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+          Generate Sensitivity
+        </a>
+        <a href="#features" class="btn btn-ghost btn-lg">Explore Features</a>
+      </div>
+      <ul class="hero-stats reveal" style="--d:.32s">
+        <li><b>6</b><span>Tuned settings</span></li>
+        <li><b>100%</b><span>Free to use</span></li>
+        <li><b>0</b><span>Login needed</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-hud reveal" style="--d:.2s" aria-hidden="true">
+      <svg viewBox="0 0 400 400" class="hud-svg">
+        <defs>
+          <radialGradient id="hudGlow"><stop offset="0" stop-color="#a855f7" stop-opacity=".38"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+          <linearGradient id="hudStroke" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9d5ff"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+        </defs>
+        <circle cx="200" cy="200" r="195" fill="url(#hudGlow)"/>
+        <g class="ring ring-a"><circle cx="200" cy="200" r="178" fill="none" stroke="url(#hudStroke)" stroke-width="1.6" stroke-dasharray="3 9" opacity=".85"/></g>
+        <g class="ring ring-b"><circle cx="200" cy="200" r="150" fill="none" stroke="#a855f7" stroke-width="3" stroke-dasharray="90 40 20 40" stroke-linecap="round"/></g>
+        <g class="ring ring-c"><circle cx="200" cy="200" r="120" fill="none" stroke="#c084fc" stroke-width="1.2" stroke-dasharray="2 6" opacity=".8"/></g>
+        <circle cx="200" cy="200" r="88" fill="#0a0614" fill-opacity=".6" stroke="#a855f7" stroke-opacity=".6" stroke-width="1.5"/>
+        <g stroke="#e9d5ff" stroke-width="2.2" stroke-linecap="round"><path d="M200 96v42M200 262v42M96 200h42M262 200h42"/></g>
+        <circle cx="200" cy="200" r="24" fill="none" stroke="#a855f7" stroke-width="1.6"/>
+        <circle class="pulse" cx="200" cy="200" r="6" fill="#c084fc"/>
+      </svg>
+      <span class="tag t1">GENERAL</span>
+      <span class="tag t2">RED DOT</span>
+      <span class="tag t3">2X</span>
+      <span class="tag t4">4X</span>
+      <span class="tag t5">SNIPER</span>
+      <span class="tag t6">FREE LOOK</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GENERATOR ============ -->
+<section class="section" id="generator">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">SMART ENGINE</span>
+      <h2>Sensitivity Generator</h2>
+      <p>Choose your device, pick your style and let XDGOD SENSI build your settings.</p>
+    </div>
+
+    <div class="gen-card reveal" id="genCard">
+      <noscript><p class="err" style="display:block">Please enable JavaScript to use the generator.</p></noscript>
+      <form id="genForm" novalidate autocomplete="off">
+        <div class="gen-grid">
+
+          <div class="field" id="fieldBrand">
+            <label class="lbl" for="brandSel"><span><b>01</b>Phone Brand</span></label>
+            <select class="select" id="brandSel" name="brand">
+              <option value="">Select your phone brand</option>
+            </select>
+            <p class="err" role="alert"></p>
+          </div>
+
+          <div class="field" id="fieldModel">
+            <label class="lbl" for="modelSel"><span><b>02</b>Phone Model</span></label>
+            <select class="select" id="modelSel" name="model" disabled>
+              <option value="">Select brand first</option>
+            </select>
+            <p class="err" role="alert"></p>
+          </div>
+
+          <div class="field field-wide" id="fieldClass" hidden>
+            <label class="lbl" for="classSel"><span><b>2B</b>Phone Performance Class</span></label>
+            <select class="select" id="classSel" name="class">
+              <option value="">How strong is your phone?</option>
+              <option value="1">Entry level (2–3 GB, basic chipset)</option>
+              <option value="2">Budget (3–4 GB)</option>
+              <option value="3">Mid-range (4–6 GB)</option>
+              <option value="4">High performance (6–8 GB)</option>
+              <option value="5">Flagship / Gaming phone</option>
+            </select>
+            <p class="err" role="alert"></p>
+          </div>
+
+          <div class="field field-wide" id="fieldRam">
+            <div class="lbl"><span><b>03</b>RAM</span></div>
+            <div class="chips" role="radiogroup" aria-label="RAM size">
+              <label class="chip"><input type="radio" name="ram" value="2"><span>2 GB</span></label>
+              <label class="chip"><input type="radio" name="ram" value="3"><span>3 GB</span></label>
+              <label class="chip"><input type="radio" name="ram" value="4"><span>4 GB</span></label>
+              <label class="chip"><input type="radio" name="ram" value="6"><span>6 GB</span></label>
+              <label class="chip"><input type="radio" name="ram" value="8"><span>8 GB</span></label>
+              <label class="chip"><input type="radio" name="ram" value="12"><span>12 GB</span></label>
+              <label class="chip"><input type="radio" name="ram" value="16"><span>16 GB</span></label>
+            </div>
+            <p class="err" role="alert"></p>
+          </div>
+
+          <div class="field field-wide" id="fieldMode">
+            <div class="lbl"><span><b>04</b>Sensitivity Style</span></div>
+            <div class="modes" role="radiogroup" aria-label="Sensitivity style">
+              <label class="mode">
+                <input type="radio" name="mode" value="low">
+                <span class="mode-face"><span class="meter"><i class="on"></i><i></i><i></i></span><b>LOW</b><small>Max control</small></span>
+              </label>
+              <label class="mode">
+                <input type="radio" name="mode" value="medium" checked>
+                <span class="mode-face"><span class="meter"><i class="on"></i><i class="on"></i><i></i></span><b>MEDIUM</b><small>Balanced</small></span>
+              </label>
+              <label class="mode">
+                <input type="radio" name="mode" value="high">
+                <span class="mode-face"><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i></span><b>HIGH</b><small>Fast flicks</small></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field field-wide" id="fieldSlider">
+            <div class="lbl">
+              <label for="slider"><span><b>05</b>Custom Sensitivity</span></label>
+              <span class="slider-read"><strong id="sliderVal">55</strong><em id="sliderMode">MEDIUM</em></span>
+            </div>
+            <div class="range-wrap">
+              <input type="range" class="range" id="slider" min="0" max="100" step="1" value="55">
+              <div class="ticks" aria-hidden="true">
+                <span style="--p:.25">LOW</span>
+                <span style="--p:.55">MED</span>
+                <span style="--p:.88">HIGH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gen-actions">
+          <button type="submit" class="btn btn-primary btn-lg" id="btnGenerate">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+            Generate Sensitivity
+          </button>
+          <button type="button" class="btn btn-ghost btn-lg" id="btnResetForm">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="results" id="results" hidden>
+      <div class="results-head">
+        <div>
+          <span class="eyebrow">YOUR SETTINGS</span>
+          <h3 class="results-title">Sensitivity Ready</h3>
+        </div>
+        <div class="meta" id="resMeta"></div>
+      </div>
+
+      <div class="res-grid" id="resGrid"></div>
+
+      <div class="results-actions">
+        <button type="button" class="btn btn-primary" id="btnCopy">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+          <span>Copy All Settings</span>
+        </button>
+        <button type="button" class="btn btn-ghost" id="btnRegen">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+          Regenerate
+        </button>
+        <button type="button" class="btn btn-ghost" id="btnReset">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+          Reset
+        </button>
+      </div>
+
+      <p class="note">These are smart starting values. Test them in Training Ground and nudge each slider by 3–5 points to match your hands.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">FEATURES</span>
+      <h2>Built Like a Pro Tool</h2>
+      <p>Everything you need to dial in your aim — fast, clean and free.</p>
+    </div>
+
+    <div class="feat-grid">
+      <article class="feat spot reveal" style="--d:0s">
+        <span class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
+        <h3>Device-Aware Profiling</h3>
+        <p>Choose your brand and model. The engine reads your phone class and tunes every value around it.</p>
+      </article>
+      <article class="feat spot reveal" style="--d:.07s">
+        <span class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span>
+        <h3>RAM-Based Tuning</h3>
+        <p>From 2 GB to 16 GB — memory size is part of the calculation so results fit your hardware.</p>
+      </article>
+      <article class="feat spot reveal" style="--d:.14s">
+        <span class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg></span>
+        <h3>Low · Medium · High</h3>
+        <p>Pick control-focused, balanced or fast-flick sensitivity with one tap.</p>
+      </article>
+      <article class="feat spot reveal" style="--d:0s">
+        <span class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span>
+        <h3>6 Scope Settings</h3>
+        <p>General, Red Dot, 2X, 4X, Sniper and Free Look — balanced against each other.</p>
+      </article>
+      <article class="feat spot reveal" style="--d:.07s">
+        <span class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></span>
+        <h3>One-Tap Copy</h3>
+        <p>Copy every value at once, or tap a single card to copy just that setting.</p>
+      </article>
+      <article class="feat spot reveal" style="--d:.14s">
+        <span class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+        <h3>Fast, Free, Private</h3>
+        <p>No login, no paid API, no database. Everything runs inside your browser.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">ABOUT</span>
+      <h2 class="left">Made for Free Fire Players</h2>
+      <p class="lead">XDGOD SENSI is a free sensitivity generator built for the Free Fire community. It reads your phone class, RAM and preferred style, then produces six values you can copy straight into the game.</p>
+      <ul class="checks">
+        <li>Works on any Android phone or iPhone</li>
+        <li>No login, no signup, no downloads</li>
+        <li>Runs in your browser — nothing is stored or sent</li>
+        <li>Fine-tune any result with the custom slider</li>
+      </ul>
+    </div>
+
+    <div class="how reveal" style="--d:.12s">
+      <h3 class="how-title">How it works</h3>
+      <ol class="how-list">
+        <li><b>1</b><div><strong>Pick your device</strong><span>Brand, model and RAM.</span></div></li>
+        <li><b>2</b><div><strong>Choose your style</strong><span>Low, Medium, High — or drag the slider.</span></div></li>
+        <li><b>3</b><div><strong>Generate &amp; apply</strong><span>Copy the values into Free Fire → Settings → Sensitivity.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY / SOCIAL ============ -->
+<section class="section" id="community">
+  <div class="container">
+    <div class="social-panel reveal">
+      <span class="eyebrow">COMMUNITY</span>
+      <h2>Join the XcussedGod Community</h2>
+      <p>Free Fire tips, tricks, gameplay and live streams in Malayalam. Subscribe, follow and level up with us.</p>
+      <div class="social-btns">
+        <a class="social-btn" href="https://youtube.com/@xcussedgod" target="_blank" rel="noopener noreferrer" aria-label="Open XcussedGod on YouTube (new tab)">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></span>
+          <span class="s-txt"><strong>Subscribe on YouTube</strong><small>@xcussedgod</small></span>
+          <svg class="s-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.instagram.com/xcussedgod/" target="_blank" rel="noopener noreferrer" aria-label="Open XcussedGod on Instagram (new tab)">
+          <span class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+          <span class="s-txt"><strong>Follow on Instagram</strong><small>@xcussedgod</small></span>
+          <svg class="s-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions? Answered.</h2>
+    </div>
+
+    <div class="faq reveal">
+      <div class="faq-item open">
+        <h3><button class="faq-q" type="button" aria-expanded="true">Is XDGOD SENSI free?<i></i></button></h3>
+        <div class="faq-a"><div><p>Yes. It is completely free — no login, no signup and no paid tools behind it.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">Are the settings guaranteed to be perfect?<i></i></button></h3>
+        <div class="faq-a"><div><p>No tool can promise that — every player's hands are different. XDGOD SENSI gives you strong starting values based on your phone class, RAM and style. Test them in Training Ground and adjust by 3–5 points if needed.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">How do I apply the settings in Free Fire?<i></i></button></h3>
+        <div class="faq-a"><div><p>Open Free Fire → Settings → Sensitivity, then set each slider to the matching value: General, Red Dot, 2X Scope, 4X Scope, Sniper Scope and Free Look.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">My phone model is not in the list.<i></i></button></h3>
+        <div class="faq-a"><div><p>Choose "Other (not listed)" in the model list, then pick the performance class closest to your phone. Your RAM and style still count.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">What do Low, Medium and High mean?<i></i></button></h3>
+        <div class="faq-a"><div><p>Low favours control and steady long-range aim. Medium is a balanced all-rounder. High is built for fast flicks and close-range fights. The custom slider lets you land anywhere in between.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">Does the site store my data?<i></i></button></h3>
+        <div class="faq-a"><div><p>No. Everything runs in your browser. Nothing you select is saved or sent anywhere.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#home" class="brand" aria-label="XDGOD SENSI — back to top">
+          <span class="brand-logo">
+            <img class="logo-img" src="assets/logo.png" alt="XcussedGod" onload="this.parentElement.classList.add('has-img')" onerror="this.remove()">
+            <span class="logo-text">XcussedGod</span>
+          </span>
+          <span class="brand-tag">SENSI <span aria-hidden="true">👾</span></span>
+        </a>
+        <p>XDGOD SENSI — Smart Sensitivity. Better Control. Better Gameplay.</p>
+      </div>
+
+      <nav class="foot-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#generator">Generator</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="foot-social">
+        <a href="https://youtube.com/@xcussedgod" target="_blank" rel="noopener noreferrer" aria-label="YouTube (new tab)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/xcussedgod/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (new tab)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <p>Copyright © 2026 XDGOD SENSI.</p>
+      <p class="made">Made for Free Fire Community 👾</p>
+    </div>
+    <p class="disclaimer">XDGOD SENSI is an unofficial fan-made tool and is not affiliated with Garena or Free Fire. Generated values are recommendations, not guarantees.</p>
+  </div>
+</footer>
+
+<!-- ============ SMART ENGINE OVERLAY ============ -->
+<div class="engine" id="engine" hidden role="dialog" aria-modal="true" aria-live="polite" aria-label="Generating sensitivity">
+  <div class="engine-card">
+    <div class="ring-wrap">
+      <svg viewBox="0 0 150 150" width="150" height="150" aria-hidden="true">
+        <circle cx="75" cy="75" r="62" fill="none" stroke="rgba(168,85,247,.16)" stroke-width="7"/>
+        <circle id="ringFg" cx="75" cy="75" r="62" fill="none" stroke="url(#ringGrad)" stroke-width="7" stroke-linecap="round"/>
+        <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9d5ff"/><stop offset="1" stop-color="#8b2fe8"/></linearGradient></defs>
+      </svg>
+      <span class="ring-pct" id="ringPct">0%</span>
+    </div>
+    <h3>SMART ENGINE</h3>
+    <p class="engine-dev" id="engineDev">Analyzing your device…</p>
+    <ul class="steps" id="engineSteps"></ul>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+</body>
+</html>
